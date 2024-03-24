@@ -13,7 +13,7 @@
     <!-- userInput -->
     <div id="myFormDiv">
         <form id="myForm">
-            <label for="textInput">Enter your Github username:</label>
+            <label for="textInput">Enter your GitHub username:</label>
             <input type="text" id="textInput" name="textInput" placeholder="Username">
             <input type="submit" id="submitButton" value="Submit">
         </form>
@@ -56,6 +56,7 @@
             /* background-image: url('https://elements-video-cover-images-0.imgix.net/files/3f734033-7f04-49ce-b32c-6fb6d1a8c719/inline_image_preview.jpg?auto=compress%2Cformat&h=394&w=700&fit=min&s=0f13263398b90add0ba59e18bba2ad74');
         background-size: cover;
         background-repeat: no-repeat; */
+        
     }
 
     label {
@@ -66,11 +67,15 @@
 
     #textInput {
         width: 30%;
-        height: 23px;
+        height: 23px;;
     }
 
     #submitButton{
-        padding: 4.5px;
+        padding: 5px;
+        background-color: black;
+        color: aliceblue;
+        font-weight: bold;
+        border:0px;
     }
 
     #myFormDiv {
@@ -86,7 +91,7 @@
         background-color: darkslategray;
         color: aliceblue;
         width: 90%;
-        max-width: 450px;
+        max-width: 400px;
         margin: auto;
         margin-top: 50px;
         padding: 10px;
@@ -132,7 +137,7 @@
 
         /* Adjustments for tablets and larger devices */
         #container {
-            margin-top: 100px;
+            margin-top: 90px;
         }
     }
 </style>
@@ -160,7 +165,7 @@
                     document.querySelector('#container').style.display = 'none'
                     setTimeout(() => {
                         alert("Enter valid username");
-                    }, 1);
+                    }, 50);
                     return
                 }
                 console.log(typeof data);
